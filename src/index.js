@@ -1,12 +1,45 @@
-import React from 'react';
-import ReactDOM from 'react-dom';
-import './index.css';
-import App from './App';
-import * as serviceWorker from './serviceWorker';
+// import React from 'react';
+// import ReactDOM from 'react-dom';
 
-ReactDOM.render(<App />, document.getElementById('root'));
+// const element = <h1>Hello World</h1>;
+// ReactDOM.render(element, document.getElementById('root'));
 
-// If you want your app to work offline and load faster, you can change
-// unregister() to register() below. Note this comes with some pitfalls.
-// Learn more about service workers: https://bit.ly/CRA-PWA
-serviceWorker.unregister();
+
+// LET
+// function sayHello() {
+//   for (let i = 0; i < 5; i++) {
+//     console.log(i);
+//   }
+
+//   console.log(i);
+// }
+// sayHello();
+
+// CONST
+// const x =1;
+// x = 2;
+
+// OBJECT
+const person = {
+  nama: 'Dimas',
+  // tinggi: function() {} //penulisan function bisa diringkas:
+  tinggi() {},
+  berat() {}
+};
+
+person.tinggi();
+person.nama = '';
+
+const targetMember = 'nama';
+person[targetMember.value] = 'Joni';
+
+const siswa = {
+  name: 'Dani',
+  nis() {
+    console.log(this);
+  }
+};
+siswa.nis();
+
+const nis = siswa.nis;
+nis();
